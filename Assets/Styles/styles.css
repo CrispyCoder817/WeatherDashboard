@@ -7,7 +7,7 @@ h1 {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding: 300px 250px;
+    padding: 0px;
     margin: 10px;
     background-color: lightcoral;
 }
@@ -37,4 +37,8 @@ h1 {
     border-radius: 16px;
 }
 
+.fiveDayForecast {
+    display: flex;
+    flex-direction: row;
+}
 /* border: stroke type color; */
