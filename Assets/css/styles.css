@@ -11,18 +11,18 @@
 }
 
 span.severe{
-    padding: 3px;
-    background-color: red;
-    color:white;
+    padding: 5px;
+    background-color: rgb(174, 0, 0);
+    color:rgb(168, 166, 166);
 }
 
 span.moderate{
-    padding: 3px;
+    padding: 5px;
     background-color: yellow;
 }
 
 span.favorable{
-    padding: 3px;
-    background-color: green;
-    color:white;
+    padding: 5px;
+    background-color: rgb(2, 219, 2);
+    color:rgb(168, 166, 166);
 }
