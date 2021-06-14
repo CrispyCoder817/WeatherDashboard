@@ -155,27 +155,27 @@ var display5Day = function(weather){
        forecastEl.appendChild(forecastDate);
 
        
-       //create an image element
+       //create an image icon
        var weatherIcon = document.createElement("img")
        weatherIcon.classList = "card-body text-center";
        weatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${dailyForecast.weather[0].icon}@2x.png`);  
 
-       //append to forecast card
+       //append to forecast container
        forecastEl.appendChild(weatherIcon);
        
-       //create temperature span
+       //create temperature span so it displays
        var forecastTempEl=document.createElement("span");
        forecastTempEl.classList = "card-body text-center";
        forecastTempEl.textContent = dailyForecast.main.temp + " °F";
 
-        //append to forecast card
+        //append to forecast container
         forecastEl.appendChild(forecastTempEl);
 
        var forecastHumEl=document.createElement("span");
        forecastHumEl.classList = "card-body text-center";
        forecastHumEl.textContent = dailyForecast.main.humidity + "  %";
 
-       //append to forecast card
+       //append to forecast container
        forecastEl.appendChild(forecastHumEl);
 
         // console.log(forecastEl);
@@ -207,7 +207,7 @@ var pastSearchHandler = function(event){
     }
 }
 
-// pastSearch();
+pastSearch();
 
 cityFormEl.addEventListener("submit", formSumbitHandler);
 pastSearchButtonEl.addEventListener("click", pastSearchHandler);
